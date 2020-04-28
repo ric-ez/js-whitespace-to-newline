@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Simple JS whitespace to new line tools</title>
+        <link
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shards-ui@3.0.0/dist/css/shards.min.css">
+    </head>
+    <body>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header font-weight-bold">
+                            Convert whitespace to new line, count lines, and remove duplicates
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <textarea
+                                    id="atas"
+                                    class="form-control"
+                                    rows="5"
+                                ></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button
+                                    onclick="ok()"
+                                    class="btn btn-primary w-100 font-weight-bold"
+                                >
+                                    Submit
+                                </button>
+                            </div>
+                            <div class="form-group">
+                                <textarea
+                                    id="bawah"
+                                    class="form-control"
+                                    rows="5"
+                                ></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button
+                                    id="copy"
+                                    data-clipboard-target="#bawah"
+                                    class="btn btn-dark font-weight-bold w-100"
+                                >
+                                    Copy
+                                </button>
+                            </div>
+                            <div class="form-group">
+                                <input
+                                    type="text"
+                                    readonly
+                                    id="hasil"
+                                    class="w-100 form-control text-center"
+                                    value="0"
+                                />
+                            </div>
+                            <!-- <hr />
+                            <div class="form-group">
+                                <button
+                                    onclick="newLine()"
+                                    id="separate"
+                                    class="btn btn-success font-weight-bold w-100 my-1"
+                                >
+                                    Seperate
+                                </button>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Result</label>
+                                <textarea
+                                    id="result_separate"
+                                    class="form-control"
+                                    rows="20"
+                                ></textarea>
+                                <button
+                                    onclick="copyEachRow()"
+                                    class="btn btn-danger w-100 my-1"
+                                >
+                                    Copy 10 10
+                                </button>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
